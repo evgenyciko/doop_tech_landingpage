@@ -1,0 +1,503 @@
+/* navbar */
+.navbar {
+  position: relative;
+  background-color: #202020 !important;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: 'Poppins'
+  font-size: 32px;
+}
+
+.nav-link {
+text-align: center;
+}
+/* jumbotron */
+
+.jumbotron {
+  background-image: url(../assets/Untitled\ \(1920\ ×\ 1080\ px\)\ \(1\).png);
+  background-size: cover;
+  height: 540px;
+  position: relative;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 150%;
+  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 150px;
+  font-weight: 200;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/* info panel */
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -100px;
+  background-color: white;
+  z-index: 2;
+  padding: 30px;
+}
+
+.info-panel img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+}
+
+/* card */
+
+/*card example */
+.page-card {
+  width: 100%;
+  max-height: max-content;
+  min-height: max-content;
+  background-color: #202020 !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+  margin-top: -25px;
+  padding-bottom: 100px;
+}
+
+.tittle-card {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #cecece !important;
+}
+
+.tittle-card hr {
+  /* background-color: #009999; */
+  width: 210px;
+  height: 5px;
+  border: solid #009999;
+  margin: auto;
+  border-radius: 2px;
+  position: relative;
+  opacity: 100%;
+}
+
+/* card 4 */
+.profile-card-4 {
+  max-width: 300px;
+  min-width: 200px;
+  background-color: rgb(95, 95, 95);
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 1);
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.profile-card-4 .test, a {
+  color: #ffffff !important;
+  position: relative;
+  text-decoration: none;
+}
+
+
+.profile-content .test::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #6ace56;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.profile-content .test:hover::before {
+transform-origin: left;
+transform: scaleX(1);
+}
+
+.profile-card-4 img {
+  transition: all 0.25s linear;
+  background-size: cover;
+}
+
+
+.profile-card-4 .profile-content {
+  position: relative;
+  padding: 15px;
+  background-color: #4e4e4e;
+  /* background-image: linear-gradient(-4deg, #20421b, transparent 50%); */
+}
+
+.profile-card-4 .profile-name {
+  font-weight: bold;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: -70px;
+  color: #FFF;
+  font-size: 17px;
+}
+
+.profile-card-4 .profile-name p {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.profile-card-4 .profile-description {
+  color: rgb(255, 254, 254);
+  font-size: 12px;
+  padding: 10px;
+  text-align: left;
+}
+
+.profile-card-4 .profile-overview {
+  padding: 15px 0px;
+}
+
+.profile-card-4 .profile-overview p {
+  font-size: 10px;
+  font-weight: 600;
+  color: #777;
+}
+
+.profile-card-4 .profile-overview h4 {
+  color: #273751;
+  font-weight: bold;
+}
+
+/*.profile-card-4 .profile-content::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  top: -10px;
+  left: 0px;
+  right: 0px;
+  background-color: rgb(82, 76, 76);
+  z-index: 0;
+  transform: skewY(3deg);
+} */
+
+.profile-card-4:hover img {
+  transform: scale(1.1, 1.1);
+  filter: brightness(110%);
+}
+
+
+
+/* page card dekstop version */
+@media (min-width: 992px) {
+
+
+
+}
+
+
+
+/* page blog */
+
+.page-blog {
+width: 100%;
+max-height: max-content;
+min-height: max-content;
+background-color: #c6c4c5 !important;
+/* background-image: url(https://thumbs.dreamstime.com/b/abstract-green-tosca-background-suit-presentation-design-modern-corporate-business-concept-206801790.jpg); */
+background-repeat: no-repeat;
+background-size: cover;
+padding-top: 5%;
+margin-top: -25px;
+padding-bottom: 5%;
+}
+
+.tittle-blog {
+text-align: center;
+padding-bottom: 30px;
+color: #020202 !important;
+}
+
+.tittle-blog hr {
+  /* background-color: #009999; */
+  width: 270px;
+  height: 5px;
+  border: solid #009999;
+  margin: auto;
+  border-radius: 2px;
+  position: relative;
+  opacity: 100%;
+}
+
+
+.tittle-blog .display-4 {
+color: white;
+margin-top: 150px;
+font-weight: 200;
+font-size: 40px;
+margin-bottom: 30px;
+}
+.btn-outline-success {
+color: #6ace56 !important;
+
+}
+
+.page-blog .card {
+background-color: #f9f9f9 !important;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+border: 0 !;
+}
+
+.page-blog .card img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover !important;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/* page card dekstop version */
+@media (min-width: 992px) {
+
+
+
+}
+
+
+/* page slider */
+
+.page-slider {
+width: 100%;
+max-height: max-content;
+min-height: max-content;
+background-color: rgb(37, 37, 37) !important;
+background-repeat: no-repeat;
+background-size: cover;
+padding-top: 5%;
+margin-top: -25px;
+padding-bottom: 5%;
+}
+
+
+.page-slider h2 {
+color: rgb(255, 255, 255);
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+position: relative;
+margin: 30px 0 60px;
+}
+h2::after {
+content: "";
+width: 140px;
+position: absolute;
+margin: 0 auto;
+height: 3px;
+background: #32acad;
+left: 0;
+right: 0;
+bottom: -10px;
+  opacity: .8;
+}
+.col-center {
+margin: 0 auto;
+float: none !important;
+}
+.carousel {
+margin: 50px auto;
+padding: 0 70px;
+}
+.carousel-item {
+color: #999;
+font-size: 14px;
+text-align: center;
+overflow: hidden;
+min-height: 290px;
+}
+.carousel .item .img-box {
+width: 135px;
+height: 135px;
+margin: 0 auto;
+padding: 5px;
+border-radius: 50%;
+}
+.carousel .img-box img {
+width: 100%;
+height: 100%;
+display: block;
+border-radius: 50%;
+background-size: cover;
+}
+.carousel .testimonial {
+padding: 30px 0 10px;
+}
+.carousel .overview {	
+font-style: italic;
+}
+.carousel .overview b {
+text-transform: uppercase;
+color: #32acad;
+}
+.carousel .carousel-control {
+width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  top: 50%;
+background: none;
+}
+.carousel-control i {
+  font-size: 68px;
+line-height: 42px;
+  position: absolute;
+  display: inline-block;
+color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+width: 10px;
+height: 10px;
+margin: 1px 3px;
+border-radius: 50%;
+}
+.carousel-indicators li {	
+background: #999;
+border-color: transparent;
+box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+background: #555;		
+box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+/* untility */
+
+.tombol {
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #009999 !important;
+  color: #f9f9f9 !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 0!important;
+}
+
+
+.tombol1 {
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: rgba(206,206,206,255)!important;
+  color: rgba(33,33,31,255) !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 0!important;
+}
+
+h1 {
+font-family: 'Poppins';
+font-size: 48px;
+font-weight: bold;
+}
+
+h2 {
+font-family: 'Poppins';
+font-size: 32px;
+font-weight: bold;
+}
+
+h3 {
+font-family: 'Poppins';
+font-size: 24px;
+font-weight: normal;
+}
+
+p {
+font-family: 'Nunito Sans', sans-serif;
+font-weight: 400;
+font-size: 16px;
+}
+/* Desktop Ver */
+@media (min-width: 992px) {
+  .navbar-brand, .nav-link {
+      color: white !important;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  }
+
+  .nav-link {
+      text-transform: uppercase;
+      margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid #009999;
+      width: 50%;
+      margin: auto;
+      padding-bottom: 5px;
+      margin-bottom: -8px;
+  }
+
+  .navbar {
+    background-color: rgb(0, 0, 0, 0.5) !important;
+  }
+
+  .jumbotron {
+      margin-top: -125px;
+      height: 840px;
+  }
+
+  .jumbotron .display-4 {
+      font-size: 62px;
+      margin-top: 300px;
+  }
+
+
+  .workingspace {
+      text-align: left;
+  }
+
+  .testi h5 {
+      text-align: center;
+      font-weight: 200;
+      font-style: italic;
+      font-size: 32px;
+  }
+
+}
+
+
+
+.page-footer {
+margin-bottom: -20px;
+}
